@@ -41,8 +41,12 @@ flask-crud-api/
 ├── requirements.txt
 ├── README.md
 │
-└── static/
-    └── index.html
+├── static/
+│   └── index.html
+│
+└── screenshots/
+    ├── dashboard.png
+    └── crud-operations.png
 ```
 
 ## API Endpoints
@@ -68,13 +72,13 @@ flask-crud-api/
 
 ## How to Run the Project
 
-### 1. Start the PostgreSQL database
+### 1. Start the PostgreSQL Database
 
 ```bash
 docker compose up -d flask_db
 ```
 
-### 2. Start the Flask application
+### 2. Start the Flask Application
 
 ```bash
 docker compose up --build flask_app
@@ -84,13 +88,17 @@ docker compose up --build flask_app
 
 Visit the following URL in your browser:
 
-```text
 http://localhost:4000/static/index.html
-```
 
 ## Application Screenshots
 
-Screenshots of the frontend dashboard can be added here.
+### Product Management Dashboard
+
+![Product Dashboard](screenshots/dashboard.png)
+
+### CRUD Operations
+
+![CRUD Operations](screenshots/crud-operations.png)
 
 ## Learning Outcomes
 
